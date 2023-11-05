@@ -10,18 +10,21 @@ A permit is a permission to perform work in places and on artifacts where regula
 ## Attributes
 
 ### PredefinedType
+
 Identifies the predefined types of permit that can be granted.
 
 { .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### Status
+
 The status currently assigned to the permit.
 
 { .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### LongDescription
+
 Detailed description of the request.
 
 { .change-ifc2x4}
@@ -30,8 +33,6 @@ Detailed description of the request.
 ## Concepts
 
 ### Aggregation
-
-
 
 #### ACCESS_IfcWorkCalendar
 
@@ -49,27 +50,19 @@ Approvals may be associated to indicate the status of acceptance or rejection us
 
 Figure 312 illustrates assignment relationships as indicated:
 
-
 * IfcActor (IfcRelAssignsToActor): Organization issuing the permit such as a local government agency or security organization.
-
 
  The IfcPermit may have assignments of its own using the IfcRelAssignsToControl relationship where RelatingControl refers to the IfcPermit and RelatedObjects contains one or more objects of the following types:
 
 * IfcActor: Organization(s) bound to the permit, typically a single contractor.
-
 
 ![Assignment Use Definition](../../../../figures/ifcpermit-assignment.png)
 Figure 312 — Permit assignment
 
 ### Object Nesting
 
-
-
 #### IfcPermit
 
 A permit may be nested to indicate permit amendments, in order of issue.
 
 ### Property Sets for Objects
-
-
-
